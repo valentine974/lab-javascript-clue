@@ -117,11 +117,12 @@ function pickMystery() {
 
 // ITERATION 3
 
-function revealMystery(object) {
-    let revealMessage= `${object.suspect.firstName} ${object.suspect.lastName} killed Mr.Boddy using the ${object.weapon.name} in the ${object.room.name}!`
+function revealMystery(object) {  
+    let revealMessage= `${object.suspect.firstName} ${object.suspect.lastName} killed Mr. Boddy using the ${object.weapon.name} in the ${object.room.name}!`
+    console.log(revealMessage);
     return revealMessage
 }
-revealMystery(pickMystery())
+
 
 
  
